@@ -1,7 +1,13 @@
+
+<?php
+ if(session_id() != "")
+    session_start()
+?>
+       
 <!DOCTYPE html>
 <html>
 <head>
-            <title>Bike Products :: Burter</title>
+            <title>Electronics Products :: Burter</title>
      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
        <style>
@@ -28,11 +34,21 @@
     </style>
 </head>
 <body>
-    <?php include 'header.php';?>
+      <?php
+        if(isset($_SESSION['email']))  
+        {  
+            include 'header.php';
+            
+            
+        }
+        else
+            include 'loggedheader.php';
+ 
+   ?>
     <div id="profile" class="container">
                 <?php
                     include 'includes/dbconnection.php';
-                $query1 = "select * from ads where category='bike'";
+                $query1 = "select * from ads where category='fashion'";
                 $results=  mysqli_query($link, $query1);
                 echo "<table border=\"0\">";
                 $x=1;
