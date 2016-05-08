@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Sign In :: Burter</title>
+    <title>Sign In :: Barter</title>
     <style>
         body{
             margin: 0;
@@ -92,7 +92,9 @@ session_start();
                 <tr>
                     <td>
                                         <?php
-                        include 'includes/dbconnection.php';
+                      
+                        require_once("dbconnection.php");
+    $db_handle = new DBController();
                         
                         if(isset($_POST['onsubmit'])){
                             

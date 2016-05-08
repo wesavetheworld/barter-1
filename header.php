@@ -9,7 +9,7 @@
 </head>
 
 <header style=" background: url(img/fancybg.png) repeat; height: 87px;">
-        <div class="container">  <span ><a href="index.php"><img src="img/logo.png" alt="Burter" width="110px"></a> </span> <span style="font-family: sans-serif;font-size: 20px;"> Exchange Every Thing Here</span>
+        <div class="container">  <span ><a href="index.php"><img src="img/logo.png" alt="Barter" width="110px"></a> </span> <span style="font-family: sans-serif;font-size: 20px;"> Exchange Every Thing Here</span>
         
             <a href="signin.php" id="myaccount" style="margin-left: 40%" class="btn btn-info"><i class="glyphicon glyphicon-user"></i> My Account</a> <a href="submitad.php" style="margin-left: 0"   class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i> Submit A Free Ad</a>
         </div>

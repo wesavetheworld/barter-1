@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-            <title>Electronics Products :: Burter</title>
+            <title>Electronics Products :: Barter</title>
      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
   
@@ -37,8 +37,9 @@
     <div id="profile" class="container">
                <?php
                 
-               include 'includes/dbconnection.php';
-               
+               //include 'includes/dbconnection.php';
+                   require_once("dbconnction.php");
+    $db_handle = new DBController();
                 $code=$_REQUEST['idcod'];
                 $query = "SELECT id, title,name,phone,state,zip,address, description, path FROM ads " . "where id like '$code'";
                 $results = mysqli_query($link, $query) or die(mysql_error()); // #1

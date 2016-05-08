@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-            <title>Sign Up :: Burter</title>
+            <title>Sign Up :: Barter</title>
             
             
             <script>
@@ -167,7 +167,8 @@
                   <tr>
                               <td><span id="numerror" style="color:red;">
                          <?php 
-        include 'includes/dbconnection.php';
+        require_once("dbconnection.php");
+        $db_handle = new DBController();
         
         if(isset($_POST['submit'])){
         $email = $_POST['email'];

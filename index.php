@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>:: Burter ::</title>
+        <title>:: Barter ::</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <!-- css library -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -218,7 +218,7 @@
     <hr>
     <h1 style="color:skyblue;"> About my site</h1>
     <hr>
-                <p style="color:skyblue;" align="jastify">The company manages Goody.com, an online auction and shopping website in which
+                <p style="color:skyblue;" align="jastify">The company manages Barter.com, an online auction and shopping website in which
                     people and businesses exchange a broad variety of goods and services worldwide.
                     In addition to its auction-style exchange, the website has since expanded to include "Buy It Now" shopping; shopping by UPC, ISBN, or other kind of SKU (via Half.com); online classified advertisements (via Kijiji or eBay Classifieds); online event ticket trading (via StubHub); and other services. It previously offered online money transfers (via PayPal),[6] which was a wholly owned subsidiary of eBay from 2002 until 2015.
 

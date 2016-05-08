@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-            <title>Electronics Products :: Burter</title>
+            <title>Electronics Products :: Barter</title>
      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
        <style>
@@ -47,7 +47,9 @@
    ?>
     <div id="profile" class="container">
                 <?php
-                    include 'includes/dbconnection.php';
+                    //include 'includes/dbconnection.php';
+            require_once("dbconnection.php");
+    $db_handle = new DBController();
                 $query1 = "select * from ads where category='fashion'";
                 $results=  mysqli_query($link, $query1);
                 echo "<table border=\"0\">";

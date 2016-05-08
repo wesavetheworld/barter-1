@@ -24,7 +24,9 @@ if(!$_SESSION['email'])
         <a style="margin-left: 40%" class="btn btn-info">
             <?php
            
-            include 'includes/dbconnection.php';
+            //include 'includes/dbconnection.php';
+                require_once("dbconnection.php");
+    $db_handle = new DBController();
 
             $name = $_SESSION['email'];
             $sql="SELECT first_name FROM signup WHERE email='$name'";

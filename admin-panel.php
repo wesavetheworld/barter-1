@@ -1,5 +1,7 @@
 <?php
-                        include 'includes/dbconnection.php';
+                        //include 'includes/dbconnection.php';
+                            require_once("dbconnction.php");
+    $db_handle = new DBController();
                         
                         if(isset($_POST['submitbtn'])){
                             

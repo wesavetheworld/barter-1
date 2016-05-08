@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Sign In :: Burter</title>
+    <title>Sign In :: Barter</title>
     <style>
         body{
             margin: 0;
@@ -99,8 +99,9 @@
     </body>
 </html>
                          <?php 
-        include 'includes/dbconnection.php';
-        
+       // include 'includes/dbconnection.php';
+            require_once("dbconnection.php");
+    $db_handle = new DBController();
         if(isset($_POST['submitdtl'])){
         $emailb = $_POST['email_b'];
         $nameb = $_POST['name_b'];

@@ -15,7 +15,8 @@ if(isset($_SESSION['email']))
 
 
              <?php
-            include 'includes/dbconnection.php';
+            require_once("dbconnection.php");
+            $db_handle = new DBController();
             
                            if(isset($_POST['frmsubmit'])){
                                
@@ -66,7 +67,7 @@ if(isset($_SESSION['email']))
 <html>
 
     <head>
-        <title>Burter :: Submit Ad</title>
+        <title>Barter :: Submit Ad</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <style>

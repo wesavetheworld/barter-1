@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Burter</title>
+        <title>Barter</title>
     </head>
     <body>
          
@@ -27,8 +27,9 @@
             </tr>
             
             <?php
-       include 'includes/dbconnection.php';
-        
+       //include 'includes/dbconnection.php';
+            require_once("dbconnction.php");
+    $db_handle = new DBController();
 
                 $query1="select * from ads";    
                 $run=  mysqli_query($link,$query1);
